@@ -1,11 +1,147 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mi tienda en línea</title>
+        <style>
+          body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #eee;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00b8d4;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.product {
+  width: 30%;
+  margin: 20px 0;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.product .price {
+  font-weight: bold;
+  color: #00b8d4;
+}
+
+footer {
+  background-color: rgb(32, 29, 29);
+  color: rgba(223, 211, 211, 0.842);
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+i.fab {
+  color: black;
+}
+
+img {
+  filter: hue-rotate(180deg) invert(100%);
+}
+
+
+
+
+        </style>
+        
+      </head>
+      
 <body>
-    
+  <header>
+    <!-- Contenido del encabezado aquí -->
+    <h1>Bienvenidos a mi tienda en línea</h1>
+  </header>
+  <nav>
+    <!-- Enlaces de navegación aquí -->
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Ventas</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- Contenido principal aquí -->
+    <h2>Productos destacados</h2>
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Producto 1</h3>
+      <p>Descripción del producto 1</p>
+      <p class="price">$50</p>
+      <button>Añadir al carrito</button>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Producto 2</h3>
+      <p>Descripción del producto 2</p>
+      <p class="price">$30</p>
+      <button>Añadir al carrito</button>
+    </div>
+  </main>
+  <footer>
+    <!-- Contenido del pie de página aquí -->
+    <p>Copyright 2021 Mi tienda en línea</p> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <a href="#"><i class="fab fa-facebook-square"></i></a>
+    <a href="#"><img src="icon-facebook.png"></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><img src="icon-instagram.png"></a>
+
+
+  </footer>
 </body>
 </html>
